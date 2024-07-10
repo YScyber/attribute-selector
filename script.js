@@ -22,7 +22,6 @@ const exisOrValueHtmlSolution = `<ul>
     <li class="ab">List04</li>
 </ul>
 `;
-
 const exisOrValueCssSolution = `li[class] {
     font-size: 200%;
 }
@@ -43,7 +42,6 @@ const substrMatchHtmlSolution = `<ul>
     <li class="bcabc">List04</li>
 </ul>
 `;
-
 const substrMatchCssSolution = `li[class^="a"] {
     font-size: 200%;
 }
@@ -64,7 +62,6 @@ const caseSensitiveHtmlSolution = `<ul>
     <li class="bA">List04</li>
 </ul>
 `;
-
 const caseSensitiveCssSolution = `li[class] {
     font-size: 200%;
 }
