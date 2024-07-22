@@ -21,15 +21,15 @@ const exisOrValueHtmlSolution = `<ul>
     <li class="a b">List03</li>
     <li class="ab">List04</li>
 </ul>`;
-const exisOrValueCssSolution = `li[class] {
+const exisOrValueCssSolution = `ul li[class] {
     font-size: 200%;
 }
 
-li[class="a"] {
+ul li[class="a"] {
     background-color: lightgreen;
 }
 
-li[class~="a"] {
+ul li[class~="a"] {
     color: orange;
 }`;
 
@@ -39,15 +39,15 @@ const substrMatchHtmlSolution = `<ul>
     <li class="bca">List03</li>
     <li class="bcabc">List04</li>
 </ul>`;
-const substrMatchCssSolution = `li[class^="a"] {
+const substrMatchCssSolution = `ul li[class^="a"] {
     font-size: 200%;
 }
 
-li[class$="a"] {
+ul li[class$="a"] {
     background-color: lightgreen;
 }
 
-li[class*="a"] {
+ul li[class*="a"] {
     color: orange;
 }`;
 
@@ -57,15 +57,15 @@ const caseSensitiveHtmlSolution = `<ul>
     <li class="Ab">List03</li>
     <li class="bA">List04</li>
 </ul>`;
-const caseSensitiveCssSolution = `li[class] {
+const caseSensitiveCssSolution = `ul li[class] {
     font-size: 200%;
 }
 
-li[class^="a"] {
+ul li[class^="a"] {
     background-color: lightgreen;
 }
 
-li[class^="a" i] {
+ul li[class^="a" i] {
     color: orange;
 }`;
 
