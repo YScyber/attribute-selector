@@ -27,7 +27,7 @@ section.preview input {
     margin: 5px;
 }
 
-.playable {
+textarea.playable {
     display: block;
     margin: 20px auto;
     padding: 10px 10px 0px;
