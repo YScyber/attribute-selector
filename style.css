@@ -42,7 +42,7 @@ textarea.playable {
     font-size: 120%;
 }
 
-.playable-buttons {
+div.playable-buttons {
     margin: 20px auto;
     padding: 5px 0 5px 26px;
     width: 90%;
