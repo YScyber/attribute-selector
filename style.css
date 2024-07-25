@@ -13,7 +13,7 @@ body {
     box-sizing: border-box;
 }
 
-.preview {
+section.preview {
     margin: 20px auto;
     padding: 10px;
     width: 90%;
@@ -22,7 +22,7 @@ body {
     border-radius: 2px;
 }
 
-.preview input {
+section.preview input {
     display: block;
     margin: 5px;
 }
