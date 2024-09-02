@@ -14,8 +14,8 @@ body {
 }
 
 section.preview,
-textarea.playable,
-div.playable-buttons {
+div.playable-buttons,
+textarea.playable {
     margin: 20px auto;
     width: 90%;
     max-width: 980px;
@@ -32,6 +32,17 @@ section.preview input {
     margin: 5px;
 }
 
+div.playable-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+div.playable-buttons input[type="button"] {
+    display: inline-block;
+    margin: 10px;
+    font-size: 120%;
+}
+
 textarea.playable {
     display: block;
     padding: 10px 10px 0px;
@@ -42,10 +53,4 @@ textarea.playable {
     font-weight: bold;
     color: #4d5053;
     font-size: 120%;
-}
-
-div.playable-buttons {
-    padding: 5px 0 5px 26px;
-    text-align: right;
-    font-size: 150%;
 }
