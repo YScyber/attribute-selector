@@ -9,6 +9,10 @@ body {
     color: #333;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .positioning {
     margin: 20px auto;
     width: 90%;
