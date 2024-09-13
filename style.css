@@ -9,13 +9,7 @@ body {
     color: #333;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-section.preview,
-div.playable-buttons,
-textarea.playable {
+.positioning {
     margin: 20px auto;
     width: 90%;
     max-width: 980px;
@@ -27,18 +21,12 @@ section.preview {
     border-radius: 2px;
 }
 
-section.preview input {
-    display: block;
-    margin: 5px;
-}
-
 div.playable-buttons {
     display: flex;
     flex-direction: column;
 }
 
 div.playable-buttons input[type="button"] {
-    display: inline-block;
     margin: 10px;
     font-size: 120%;
 }
