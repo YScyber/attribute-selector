@@ -1,48 +1,34 @@
 @charset "UTF-8";
 html {
-    font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 1em/1.5 sans-serif;
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    color: #333;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.positioning {
-    margin: 20px auto;
     width: 90%;
     max-width: 980px;
+    background-color: #000;
+    color: #f8f8f8;
 }
 
-section.preview {
-    padding: 10px;
-    border: 1px solid #4d5053;
-    border-radius: 2px;
+header {
+    margin-bottom: 20px;
+    padding: 1em;
+    border-bottom: 10px double #f8f8f8;
 }
 
-div.playable-buttons {
+header h1 {
+    text-align: center;
+}
+
+div.wrapper {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
-div.playable-buttons input[type="button"] {
-    margin: 10px;
-    font-size: 120%;
-}
-
-textarea.playable {
-    display: block;
-    padding: 10px 10px 0px;
-    border: none;
-    border-left: 6px solid #55acbb;
-    background-color: #f4f6f8;
-    font-family: monospace;
-    font-weight: bold;
-    color: #4d5053;
-    font-size: 120%;
+div.wrapper iframe {
+    max-width: 100%;
+    background-color: #f8f8f8;
 }
