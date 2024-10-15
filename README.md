@@ -19,8 +19,10 @@ iframe要素の内容は上から順に以下の通りとなります。
 
 ### 大文字と小文字を区別
 
-- `ul li[class^="a" i]` ー class属性の値が大文字小文字問わずに**A**、または**a**から始まる値のセレクターに一致<br><br>
+- `ul li[class^="a" i]` ー class属性の値が大文字小文字問わずに**A**、または**a**から始まる値のセレクターに一致
+<br><br>
 
-※ 日本時間 2024/09/18 にリファクタリングしました。<br><br>
+※ 日本時間 2024/09/18 にリファクタリングしました。
+<br><br>
 
 [完成ページへ](https://yscyber.github.io/attribute-selector/ "https://yscyber.github.io/attribute-selector/")
