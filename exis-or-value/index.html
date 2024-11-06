@@ -15,22 +15,25 @@
 
 <ul>
     <li>List01</li>
-    <li>List02</li>
-    <li>List03</li>
-    <li>List04</li>
+    <li class="a">List02</li>
+    <li class="a b">List03</li>
+    <li class="ab">List04</li>
 </ul>
 </textarea>
     <textarea class="positioning playable playable-css" style="height: 160px;">
-ul {
-    list-style-type: none;
+ul li[class] {
+    font-size: 200%;
 }
 
-ul li {
-    padding: 5px;
+ul li[class="a"] {
+    background-color: #9e9;
+}
+
+ul li[class~="a"] {
+    color: #fa0;
 }
 </textarea>
     <div class="positioning playable-buttons">
-        <input type="button" id="exisOrValue" value="存在や値のセレクター" />
         <input type="button" id="reset" value="リセット" />
     </div>
 </body>
