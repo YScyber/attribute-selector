@@ -25,6 +25,14 @@ section.preview {
     border-radius: 2px;
 }
 
+section.preview ul {
+    list-style-type: none;
+}
+
+section.preview ul li {
+    padding: 0.3em;
+}
+
 textarea.playable {
     display: block;
     padding: 10px 10px 0px;
