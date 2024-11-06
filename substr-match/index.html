@@ -14,23 +14,26 @@
 <h2>部分文字列一致セレクター</h2>
 
 <ul>
-    <li>List01</li>
-    <li>List02</li>
-    <li>List03</li>
-    <li>List04</li>
+    <li class="a">List01</li>
+    <li class="ab">List02</li>
+    <li class="bca">List03</li>
+    <li class="bcabc">List04</li>
 </ul>
 </textarea>
     <textarea class="positioning playable playable-css" style="height: 160px;">
-ul {
-    list-style-type: none;
+ul li[class^="a"] {
+    font-size: 200%;
 }
 
-ul li {
-    padding: 5px;
+ul li[class$="a"] {
+    background-color: #9e9;
+}
+
+ul li[class*="a"] {
+    color: #fa0;
 }
 </textarea>
     <div class="positioning playable-buttons">
-        <input type="button" id="substrMatch" value="部分文字列一致セレクター" />
         <input type="button" id="reset" value="リセット" />
     </div>
 </body>
