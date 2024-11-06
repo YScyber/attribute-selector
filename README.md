@@ -65,7 +65,7 @@ section.preview ul li {
 `class`属性を持つセレクターの全てに`font-size: 200%;`を指定してテキストを大きくしています。
 
 ```css
-ul li[class] {
+section.preview ul li[class] {
     font-size: 200%;
 }
 ```
@@ -73,14 +73,14 @@ ul li[class] {
 `class`属性の値が`a`に一致した場合に、背景色を`#9e9`（明るい緑色）にしていますが、`a b`といったスペースで区切られた場合は該当しません。
 
 ```css
-ul li[class="a"] {
+section.preview ul li[class="a"] {
     background-color: #9e9;
 }
 ```
 `class`属性の値が`a`または`a b`といった値に一致した場合にテキストの色を`#fa0`（オレンジ色）にしていますが、`ab`のようにスペースで区切られていない場合には該当しません。
 
 ```css
-ul li[class~="a"] {
+section.preview ul li[class~="a"] {
     color: #fa0;
 }
 ```
@@ -108,7 +108,7 @@ ul li[class~="a"] {
 `class`属性の値が`a`から始まる値に一致した場合に`font-size: 200%;`を指定してテキストを大きくしています。
 
 ```css
-ul li[class^="a"] {
+section.preview ul li[class^="a"] {
     font-size: 200%;
 }
 ```
@@ -116,7 +116,7 @@ ul li[class^="a"] {
 `class`属性の値が`a`で終わる値に一致した場合に背景色を`#9e9`（明るい緑色）にしています。
 
 ```css
-ul li[class$="a"] {
+section.preview ul li[class$="a"] {
     background-color: #9e9;
 }
 ```
@@ -124,7 +124,7 @@ ul li[class$="a"] {
 `class`属性の値のどこかに`a`が含まれている場合にテキストの色を`#fa0`（オレンジ色）にしています。
 
 ```css
-ul li[class*="a"] {
+section.preview ul li[class*="a"] {
     color: #fa0;
 }
 ```
@@ -152,7 +152,7 @@ ul li[class*="a"] {
 `class`属性を持つセレクターの全てに`font-size: 200%;`を指定してテキストを大きくしています。
 
 ```css
-ul li[class] {
+section.preview ul li[class] {
     font-size: 200%;
 }
 ```
@@ -160,7 +160,7 @@ ul li[class] {
 `class`属性の値が`a`から始まる値に一致した場合に背景色を`#9e9`（明るい緑色）にしています。
 
 ```css
-ul li[class^="a"] {
+section.preview ul li[class^="a"] {
     font-size: 200%;
 }
 ```
@@ -168,7 +168,7 @@ ul li[class^="a"] {
 `class`属性の値が大文字小文字問わずに`A`または`a`から始まる値に一致した場合にテキストの色を`#fa0`（オレンジ色）にしています。
 
 ```css
-ul li[class^="a" i] {
+section.preview ul li[class^="a" i] {
     color: #fa0;
 }
 ```
