@@ -9,31 +9,29 @@
     <style class="editable"></style>
 </head>
 <body>
-    <section class="positioning preview"></section>
-    <textarea class="positioning playable playable-html">
+    <section class="align"></section>
+    <textarea class="align playable-html">
 <h2>部分文字列一致セレクター</h2>
 
-<ul>
-    <li class="a">List01</li>
-    <li class="ab">List02</li>
-    <li class="bca">List03</li>
-    <li class="bcabc">List04</li>
-</ul>
+<p class="a">Paragraph01</p>
+<p class="ab">Paragraph02</p>
+<p class="bca">Paragraph03</p>
+<p class="bcabc">Paragraph04</p>
 </textarea>
-    <textarea class="positioning playable playable-css">
-section.preview ul li[class^="a"] {
-    font-size: 200%;
+    <textarea class="align playable-css">
+p[class^="a"] {
+    font-size: 150%;
 }
 
-section.preview ul li[class$="a"] {
+p[class$="a"] {
     background-color: #9e9;
 }
 
-section.preview ul li[class*="a"] {
+p[class*="a"] {
     color: #fa0;
 }
 </textarea>
-    <div class="positioning playable-buttons">
+    <div class="align playable-buttons">
         <input type="button" id="reset" value="リセット" />
     </div>
 </body>
