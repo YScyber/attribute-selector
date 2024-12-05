@@ -9,31 +9,29 @@
     <style class="editable"></style>
 </head>
 <body>
-    <section class="positioning preview"></section>
-    <textarea class="positioning playable playable-html">
+    <section class="align"></section>
+    <textarea class="align playable-html">
 <h2>大文字と小文字を区別</h2>
 
-<ul>
-    <li class="a">List01</li>
-    <li class="A">List02</li>
-    <li class="Ab">List03</li>
-    <li class="bA">List04</li>
-</ul>
+<p class="a">Paragraph01</p>
+<p class="A">Paragraph02</p>
+<p class="Ab">Paragraph03</p>
+<p class="bA">Paragraph04</p>
 </textarea>
-    <textarea class="positioning playable playable-css">
-section.preview ul li[class] {
-    font-size: 200%;
+    <textarea class="align playable-css">
+p[class] {
+    font-size: 150%;
 }
 
-section.preview ul li[class^="a"] {
+p[class^="a"] {
     background-color: #9e9;
 }
 
-section.preview ul li[class^="a" i] {
+p[class^="a" i] {
     color: #fa0;
 }
 </textarea>
-    <div class="positioning playable-buttons">
+    <div class="align playable-buttons">
         <input type="button" id="reset" value="リセット" />
     </div>
 </body>
