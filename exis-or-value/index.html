@@ -9,31 +9,29 @@
     <style class="editable"></style>
 </head>
 <body>
-    <section class="positioning preview"></section>
-    <textarea class="positioning playable playable-html">
+    <section class="align"></section>
+    <textarea class="align playable-html">
 <h2>存在や値のセレクター</h2>
 
-<ul>
-    <li>List01</li>
-    <li class="a">List02</li>
-    <li class="a b">List03</li>
-    <li class="ab">List04</li>
-</ul>
+<p>Paragraph01</p>
+<p class="a">Paragraph02</p>
+<p class="a b">Paragraph03</p>
+<p class="ab">Paragraph04</p>
 </textarea>
-    <textarea class="positioning playable playable-css">
-section.preview ul li[class] {
+    <textarea class="align playable-css">
+p[class] {
     font-size: 200%;
 }
 
-section.preview ul li[class="a"] {
+p[class="a"] {
     background-color: #9e9;
 }
 
-section.preview ul li[class~="a"] {
+p[class~="a"] {
     color: #fa0;
 }
 </textarea>
-    <div class="positioning playable-buttons">
+    <div class="align playable-buttons">
         <input type="button" id="reset" value="リセット" />
     </div>
 </body>
