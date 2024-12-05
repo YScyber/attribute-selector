@@ -12,35 +12,27 @@ iframe要素の内容は上から順に以下の通りとなります。
 どのように変更されるのかを表示させるためのHTMLのコードは以下の通りです。
 
 ```html
-<h2>...</h2> <!-- "..."は"存在や値のセレクター"、"部分文字列一致セレクター"、"大文字と小文字を区別"と記述されています -->
+<h2>...</h2> <!-- "..."は"デフォルト"、"存在や値のセレクター"、"部分文字列一致セレクター"、"大文字と小文字を区別"と記述されています -->
 
-<ul>
-    <li>List01</li>
-    <li>List02</li>
-    <li>List03</li>
-    <li>List04</li>
-</ul>
+<p>Paragraph01</p>
+<p>Paragraph02</p>
+<p>Paragraph03</p>
+<p>Paragraph04</p>
 ```
 
 #### CSS
 
-ul要素に`list-style-type`プロパティの値を`circle`から`none`と変更して装飾を消去させています。
+アットルールを使用して画面の幅が`699px`以下の場合、textarea要素内に記述されているコードのフォントサイズを`120%`から`100%`へと変更しています。 
 
 ```css
-section.preview ul {
-    list-style-type: none;
+@media screen and (max-width: 699px) {
+    textarea {
+        font-size: 100%;
+    }
 }
 ```
 
-ul要素内にあるli要素内の余白を`0.3em`空けています。
-
-```css
-section.preview ul li {
-    padding: 0.3em;
-}
-```
-
-これらのCSSの共通設定は、各ディレクトリ内にある`style.css`ファイルに記述しています。
+このCSSの共通設定は、各ディレクトリ内にある`style.css`ファイルに記述しています。
 <br>
 
 ### 存在や値のセレクター
@@ -52,35 +44,33 @@ section.preview ul li {
 ```html
 <h2>存在や値のセレクター</h2>
 
-<ul>
-    <li>List01</li>
-    <li class="a">List02</li>
-    <li class="a b">List03</li>
-    <li class="ab">List04</li>
-</ul>
+<p>Paragraph01</p>
+<p class="a">Paragraph02</p>
+<p class="a b">Paragraph03</p>
+<p class="ab">Paragraph04</p>
 ```
 
 #### CSS
 
-`class`属性を持つセレクターの全てに`font-size: 200%;`を指定してテキストを大きくしています。
+`class`属性を持つセレクターの全てに`font-size: 150%;`を指定してテキストを大きくしています。
 
 ```css
-section.preview ul li[class] {
-    font-size: 200%;
+p[class] {
+    font-size: 150%;
 }
 ```
 
 `class`属性の値が`a`に一致した場合に、背景色を`#9e9`（明るい緑色）にしていますが、`a b`といったスペースで区切られた場合は該当しません。
 
 ```css
-section.preview ul li[class="a"] {
+p[class="a"] {
     background-color: #9e9;
 }
 ```
 `class`属性の値が`a`または`a b`といった値に一致した場合にテキストの色を`#fa0`（オレンジ色）にしていますが、`ab`のようにスペースで区切られていない場合には該当しません。
 
 ```css
-section.preview ul li[class~="a"] {
+p[class~="a"] {
     color: #fa0;
 }
 ```
@@ -95,28 +85,26 @@ section.preview ul li[class~="a"] {
 ```html
 <h2>部分文字列一致セレクター</h2>
 
-<ul>
-    <li class="a">List01</li>
-    <li class="ab">List02</li>
-    <li class="bca">List03</li>
-    <li class="bcabc">List04</li>
-</ul>
+<p class="a">Paragraph01</p>
+<p class="ab">Paragraph02</p>
+<p class="bca">Paragraph03</p>
+<p class="bcabc">Paragraph04</p>
 ```
 
 #### CSS
 
-`class`属性の値が`a`から始まる値に一致した場合に`font-size: 200%;`を指定してテキストを大きくしています。
+`class`属性の値が`a`から始まる値に一致した場合に`font-size: 150%;`を指定してテキストを大きくしています。
 
 ```css
-section.preview ul li[class^="a"] {
-    font-size: 200%;
+p[class^="a"] {
+    font-size: 150%;
 }
 ```
 
 `class`属性の値が`a`で終わる値に一致した場合に背景色を`#9e9`（明るい緑色）にしています。
 
 ```css
-section.preview ul li[class$="a"] {
+p[class$="a"] {
     background-color: #9e9;
 }
 ```
@@ -124,7 +112,7 @@ section.preview ul li[class$="a"] {
 `class`属性の値のどこかに`a`が含まれている場合にテキストの色を`#fa0`（オレンジ色）にしています。
 
 ```css
-section.preview ul li[class*="a"] {
+p[class*="a"] {
     color: #fa0;
 }
 ```
@@ -139,42 +127,40 @@ section.preview ul li[class*="a"] {
 ```html
 <h2>大文字と小文字を区別</h2>
 
-<ul>
-    <li class="a">List01</li>
-    <li class="A">List02</li>
-    <li class="Ab">List03</li>
-    <li class="bA">List04</li>
-</ul>
+<p class="a">Paragraph01</p>
+<p class="A">Paragraph02</p>
+<p class="Ab">Paragraph03</p>
+<p class="bA">Paragraph04</p>
 ```
 
 #### CSS
 
-`class`属性を持つセレクターの全てに`font-size: 200%;`を指定してテキストを大きくしています。
+`class`属性を持つセレクターの全てに`font-size: 150%;`を指定してテキストを大きくしています。
 
 ```css
-section.preview ul li[class] {
-    font-size: 200%;
+p[class] {
+    font-size: 150%;
 }
 ```
 
 `class`属性の値が`a`から始まる値に一致した場合に背景色を`#9e9`（明るい緑色）にしています。
 
 ```css
-section.preview ul li[class^="a"] {
-    font-size: 200%;
+p[class^="a"] {
+    background-color: #9e9;
 }
 ```
 
 `class`属性の値が大文字小文字問わずに`A`または`a`から始まる値に一致した場合にテキストの色を`#fa0`（オレンジ色）にしています。
 
 ```css
-section.preview ul li[class^="a" i] {
+p[class^="a" i] {
     color: #fa0;
 }
 ```
 <br>
 
-※ 日本時間 2024/11/06 にリファクタリングしました。
+※ 日本時間 2024/12/05 に変更しました。
 <br><br>
 
 [完成ページへ](https://yscyber.github.io/attribute-selector/ "https://yscyber.github.io/attribute-selector/")
