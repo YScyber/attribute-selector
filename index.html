@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>属性セレクター</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js" type="text/javascript" defer></script>
 </head>
 <body>
     <header>
         <h1>属性セレクター</h1>
+        <select>
+            <option value="">選択してください</option>
+            <option value="default/index.html">デフォルト</option>
+            <option value="exis-or-value/index.html">存在や値のセレクター</option>
+            <option value="substr-match/index.html">部分文字列一致セレクター</option>
+            <option value="case-sensitive/index.html">大文字と小文字を区別</option>
+        </select>
     </header>
-    <div class="wrapper">
-        <iframe src="default/index.html" title="デフォルトのデモファイル" width="980" height="600" frameborder="0"></iframe>
-        <iframe src="exis-or-value/index.html" title="存在や値のセレクターのデモファイル" width="980" height="900" frameborder="0"></iframe>
-        <iframe src="substr-match/index.html" title="部分文字列一致セレクターのデモファイル" width="980" height="850" frameborder="0"></iframe>
-        <iframe src="case-sensitive/index.html" title="大文字と小文字を区別のデモファイル" width="980" height="900" frameborder="0"></iframe>
-    </div>
+    <iframe width="980" height="500" frameborder="0"></iframe>
 </body>
 </html>
