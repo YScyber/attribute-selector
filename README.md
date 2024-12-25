@@ -89,6 +89,9 @@ p[class~="a"] {
 ```
 <br>
 
+[ソースコードの参照ページへ](exis-or-value/index.html "exis-or-value/index.html")
+<br>
+
 ## 部分文字列一致セレクター
 
 ### HTML
@@ -129,6 +132,9 @@ p[class*="a"] {
     color: #fa0;
 }
 ```
+<br>
+
+[ソースコードの参照ページへ](substr-match/index.html "substr-match/index.html")
 <br>
 
 ## 大文字と小文字を区別
@@ -173,7 +179,10 @@ p[class^="a" i] {
 ```
 <br>
 
-※ 日本時間 2024/12/18 に変更を加えました。
+[ソースコードの参照ページへ](case-sensitive/index.html "case-sensitive/index.html")
+<br>
+
+※ 日本時間 2024/12/25 に変更を加えました。
 <br><br>
 
 [完成ページへ](https://yscyber.github.io/attribute-selector/ "https://yscyber.github.io/attribute-selector/")
