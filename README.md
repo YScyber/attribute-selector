@@ -87,7 +87,6 @@ p[class~="a"] {
     color: #fa0;
 }
 ```
-<br>
 
 [ソースコードの参照ページへ](exis-or-value/index.html "exis-or-value/index.html")
 <br>
@@ -132,7 +131,6 @@ p[class*="a"] {
     color: #fa0;
 }
 ```
-<br>
 
 [ソースコードの参照ページへ](substr-match/index.html "substr-match/index.html")
 <br>
@@ -177,7 +175,6 @@ p[class^="a" i] {
     color: #fa0;
 }
 ```
-<br>
 
 [ソースコードの参照ページへ](case-sensitive/index.html "case-sensitive/index.html")
 <br>
