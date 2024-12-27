@@ -14,7 +14,7 @@
     - CSSコードが記述されています。
 - リセットボタン（`input`要素）
     - textarea要素内に記述されているコードの変更を初期値（読み込まれた最初の状態）に戻すためのボタンです。
-<br>
+<br><br>
 
 ## 共通設定
 
@@ -46,13 +46,13 @@
 ```
 
 このCSSの共通設定は、各ディレクトリ内にある`style.css`ファイルに記述しています。
-<br>
+<br><br>
 
 ## 存在や値のセレクター
 
 ### HTML
 
-**存在や値のセレクター**を表示させるためのHTMLのコードは次の通りです。
+**存在や値のセレクター**を表示させるためのHTMLコードです。
 
 ```html
 <h2>存在や値のセレクター</h2>
@@ -87,15 +87,16 @@ p[class~="a"] {
     color: #fa0;
 }
 ```
+<br>
 
 [ソースコードの参照ページへ](exis-or-value/index.html "exis-or-value/index.html")
-<br>
+<br><br>
 
 ## 部分文字列一致セレクター
 
 ### HTML
 
-**部分文字列一致セレクター**を表示させるためのHTMLのコードは次の通りです。
+**部分文字列一致セレクター**を表示させるためのHTMLコードです。
 
 ```html
 <h2>部分文字列一致セレクター</h2>
@@ -131,15 +132,16 @@ p[class*="a"] {
     color: #fa0;
 }
 ```
+<br>
 
 [ソースコードの参照ページへ](substr-match/index.html "substr-match/index.html")
-<br>
+<br><br>
 
 ## 大文字と小文字を区別
 
 ### HTML
 
-**大文字と小文字を区別**を表示させるためのHTMLのコードは次の通りです。
+**大文字と小文字を区別**を表示させるためのHTMLコードです。
 
 ```html
 <h2>大文字と小文字を区別</h2>
@@ -175,11 +177,12 @@ p[class^="a" i] {
     color: #fa0;
 }
 ```
-
-[ソースコードの参照ページへ](case-sensitive/index.html "case-sensitive/index.html")
 <br>
 
-※ 日本時間 2024/12/25 に変更を加えました。
+[ソースコードの参照ページへ](case-sensitive/index.html "case-sensitive/index.html")
+<br><br>
+
+※ 日本時間 2024/12/27 に変更を加えました。
 <br><br>
 
 [完成ページへ](https://yscyber.github.io/attribute-selector/ "https://yscyber.github.io/attribute-selector/")
