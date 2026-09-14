@@ -1,0 +1,26 @@
+@charset "UTF-8";
+html {
+    font: 1em/1.2 serif;
+}
+
+body {
+    margin: 20px auto;
+    padding: 0;
+    width: 90%;
+    max-width: 980px;
+    background-color: #000;
+    color: #f8f8f8;
+}
+
+header {
+    border-bottom: 10px double;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    margin: 2em auto;
+    padding: 0.1em;
+}

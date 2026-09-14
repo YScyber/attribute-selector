@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>属性セレクター</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <style>
+        /* 存在や値のセレクター */
+        div#exis-or-value > p[class] {
+            font-size: 150%;
+        }
+        div#exis-or-value > p[class="a"] {
+            background-color: #f0f;
+        }
+        div#exis-or-value > p[class~="a"] {
+            color: #0ff;
+        }
+
+        /* 部分文字列一致セレクター */
+        div#substr-match > p[class^="a"] {
+            font-size: 150%;
+        }
+        div#substr-match > p[class$="a"] {
+            background-color: #f0f;
+        }
+        div#substr-match > p[class*="a"] {
+            color: #0ff;
+        }
+
+        /* 大文字と小文字を区別 */
+        div#case-sensitive > p[class] {
+            font-size: 150%;
+        }
+        div#case-sensitive > p[class^="a"] {
+            background-color: #f0f;
+        }
+        div#case-sensitive > p[class^="a" i] {
+            color: #0ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>属性セレクター</h1>
+    </header>
+    <div id="exis-or-value">
+        <h2>存在や値のセレクター</h2>
+        <p>Paragraph01</p>
+        <p class="a">Paragraph02</p>
+        <p class="a b">Paragraph03</p>
+        <p class="ab">Paragraph04</p>
+    </div>
+    <div id="substr-match">
+        <h2>部分文字列一致セレクター</h2>
+        <p class="a">Paragraph01</p>
+        <p class="ab">Paragraph02</p>
+        <p class="bca">Paragraph03</p>
+        <p class="bcabc">Paragraph04</p>
+    </div>
+    <div id="case-sensitive">
+        <h2>大文字と小文字を区別</h2>
+        <p class="a">Paragraph01</p>
+        <p class="A">Paragraph02</p>
+        <p class="Ab">Paragraph03</p>
+        <p class="bA">Paragraph04</p>
+    </div>
+</body>
+</html>
